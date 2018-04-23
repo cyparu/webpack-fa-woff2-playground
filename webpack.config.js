@@ -10,12 +10,10 @@ module.exports = {
 	},
 	module: {
 		rules: [
-			// config scss
-			{ test: /\.scss$/, loader: [ MiniCssExtractPlugin.loader, "css-loader", "resolve-url-loader", "sass-loader?sourceMap"] },
-			// select just woff2 font files
-			{ test: /.woff2$/, loader: "file-loader?name=fonts/[name].[ext]" },
-			// skip all other font files
-			{ test: /.(woff|eot|ttf|otf|svg)$/, loader: "null-loader" }
+			// config scss, with postcss-loader config externalized in postcss.config.js 
+			{ test: /\.scss$/, loader: [ MiniCssExtractPlugin.loader, "css-loader", "postcss-loader", "resolve-url-loader", "sass-loader?sourceMap"] },
+			// select all supported font formats with "woff2" explicit selection being performed by postcss-loader & postcss-discard-font-face
+			{ test: /.(woff|woff2|eot|ttf|otf|svg)$/, loader: "file-loader?name=fonts/[name].[ext]" },
 		]
 	},
 	plugins: [

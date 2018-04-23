@@ -1,6 +1,6 @@
 {
-	"name": "null_loader_css_url_bug",
-	"version": "0.1.1",
+	"name": "webpack-fa-woff2-playground",
+	"version": "0.1.2",
 	"scripts": {
 		"dev": "webpack --mode development",
 		"build": "webpack --mode production"
@@ -15,8 +15,9 @@
 		"css-loader": "0.28.11",
 		"sass-loader": "7.0.1",
 		"file-loader": "1.1.11",
+		"postcss-loader": "2.1.4",
+		"postcss-discard-font-face": "3.0.0",
 		"resolve-url-loader": "2.3.0",
-		"null-loader": "0.1.1",
 		"mini-css-extract-plugin": "0.4.0"
 	},
 	"private": true

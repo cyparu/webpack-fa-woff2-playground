@@ -1,0 +1,23 @@
+{
+	"name": "null_loader_css_url_bug",
+	"version": "0.1.1",
+	"scripts": {
+		"dev": "webpack --mode development",
+		"build": "webpack --mode production"
+	},
+	"dependencies": {
+		"font-awesome": "4.7.0"
+	},
+	"devDependencies": {
+		"webpack": "4.6.0",
+		"webpack-cli": "2.0.15",
+		"node-sass": "4.8.3",
+		"css-loader": "0.28.11",
+		"sass-loader": "7.0.1",
+		"file-loader": "1.1.11",
+		"resolve-url-loader": "2.3.0",
+		"null-loader": "0.1.1",
+		"mini-css-extract-plugin": "0.4.0"
+	},
+	"private": true
+}
